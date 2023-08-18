@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="card mt-10 ml-10 w-96 bg-base-100 shadow-xl">
+            <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+            <div class="card-body ">
+              <p class="text-4xl tezt-center ">Triangle</p>
+              <p class="text-2xl font-bold text-center">Area = .5 X b X h</p>
+              <p>
+                <input id="triangle-base" placeholder="base" class="border border-indigo-600 w-1/4" type="number">
+                <span>cm </span>
+                <input id="triangle-height" placeholder="heights" class="border border-indigo-600 w-1/4 ml-5" type="number">
+                <span>cm</span>
+
+              </p>
+              <p>Area <span id="triangle-area"></span></p>
+              <div class="card-actions ">
+                <button onclick="CalculateTriangleArea()" class="btn btn-primary  w-full text-white">Calculate</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <script src="scripts/are.calculator.js"></script>
+</body>
+</html>
